@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-T43LB5P4C5"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -16,46 +16,66 @@
     <meta name="keyword" content="ga, IT관련블로그, 경영정보">
     <meta name="author" content="이동목">
     <title>Welcome to Dongmok's site</title>
-</head>
+    <script src="https://kit.fontawesome.com/46b7b738a5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/mystyle.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+        body{
+            margin: auto;
+            max-width: 980px;
+        }
+        section{
+            display: flex;
+        }
+        .content{
+            flex: 4;
+        }
+        aside{
+            flex: 1;
+        }
+    </style>
+</head> 
 <body>
   <!--header+nav+section>article*3+aside^footer-->
-<header>
-    <img src="./images/logo.jpg" alt="CI">
+<header id="home">
+    <i class="fa-sharp fa-solid fa-bars"></i>
    <h1>Dongmok site</h1>
 </header>
 <nav>
+    <!--ul>li*4>a{메인메뉴$$}-->
     <ul>
-        <li>소개</li>
-        <li>쇼핑</li>
-        <li>패키지</li>
-        <li>커뮤니티</li>
+        <li><a href="./index.html">소개</a></li>
+        <li><a href="./shop/computer.html">쇼핑</a></li>
+        <li><a href="./event/event.html">이벤트</a></li>
+        <li><a href="#">커뮤니티</a></li>
     </ul>
-    
+
 </nav>
 <section>
+    <div class="content">
     <article>
         <div class="bigdata">
-            <img src="./images/bigdata.jpg" alt="메인이미지"width="50%"> 
+            <img src="./images/bigdata.jpg" class="w3-circle" alt="메인이미지"width="50%">
          </div>
-         <div class="acton">
+         <div class="action">
             <h2>나의 대외활동 이력</h2>
-            <table border="1">
+            <table class="w3-table-all w3-hoverable">
                 <tr>
                     <th>기간</th>
                     <th>대외활동내용</th>
                     <th>주최</th>
                 </tr>
-                <tr>
+                <tr class="w3-hover-blue">
                     <td>2021.3</td>
                     <td>마케팅경진대회</td>
                     <td>정보학회</td>
                 </tr>
-                <tr>
+                <tr class="w3-hover-green">
                     <td>2022.5</td>
                     <td>GA 교육프로그램</td>
                     <td>동의대학교</td>
                 </tr>
-                <tr>
+                <tr class="w3-hover-red">
                     <td>2021.6</td>
                     <td>공모전</td>
                     <td>동의대학교</td>
@@ -79,14 +99,33 @@
         <iframe width="70%" height="400" src="./gallery.html" frameborder="0"></iframe>
         </div>
     </article>
+    </div>
     <aside>
         <div class="link">
-            <a href="http://mis.deu.ac.kr">경영정보학과 사이트</a><br>
+            <a href="http://mis.deu.ac.kr" target="_blank">경영정보학과 사이트</a><br>
             <a href="./gallery.html">갤러리</a><br>
-            <a href=""></a>
+            <a href="#home">시작이동</a>
+        </div> 
+        <div class="login">
+            <h2>  로그인</h2>
+            <form action="#" method="get ">
+                회원ID<input type="text" class="w3-input name="id" id=""><br>
+                비밀번호 <input type="password" class="w3-input name="pw" id=""><br>
+                남자 <input type="radio" name="gender" value="1" id="">
+                여자 <input type="radio" name="gender" value="2" id="">
+                <br>
+                <input type="submit" class="w3-button w3-black w3-round" value="로그인">
+                <input type="reset" class="w3-button w3-black w3-round" value="재설정">
+            </form>
         </div>
     </aside>
 </section> 
-<footer>저작권과 주소</footer>
+<footer>저작권과 주소
+    <div class="sns">
+        <a href="http://facebook.com/">
+        <i class="fa-brands fa-facebook"></i></a>
+        <i class="fa-brands fa-twitter"></i>
+    </div>
+</footer>
 </body>
 </html>
