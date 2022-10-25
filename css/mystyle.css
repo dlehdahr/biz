@@ -1,0 +1,70 @@
+<style>
+        *{
+            font-family: "맑은 고딕", Arial, Helvetica, sans-serif;
+            line-height: 150%;
+        }
+        body{
+            margin-top: 20px;
+            margin: 0 auto;
+            max-width: 980px;
+        }
+        header, footer{
+            height: 100px;
+        }
+        header h1 {
+            display: inline;
+        }
+        footer{
+            background-color: gray;
+        }
+        nav{
+            height: 50px;
+        }
+        section{
+            display: flex;
+        }
+        .content{
+            flex: 4;
+        }
+        aside{
+            flex: 1;
+        }
+        ul { list-style-type: none;}
+        a { text-decoration: none;}
+        nav ul li {
+            display: inline;
+            padding: 15px 20px;
+            letter-spacing: 5px;
+        }
+        nav ul li:hover{
+            background-color: rgb(255, 166, 0);
+        }
+        nav ul {
+            border-top: 2px solid rgb(255, 166, 0);
+            border-bottom: 2px solid rgb(255, 166, 0);
+            padding: 15px 20px;
+            text-align: center;
+        }
+        .bigdata > img {
+            padding-top: 50px;
+            display: block;
+            width: 50%;
+            margin: 0 auto;
+        }
+        .action table{
+            width: 90%;
+            font-size: 1.2em;
+            border: 0px;
+            margin:  0 auto;
+        }
+        .action table th{
+            background-color: rgb(255, 166, 0);
+        }
+        video, iframe{
+            width: 70%;
+            margin: 0 auto;
+        }
+        .link{
+            padding-top: 50px;
+        }
+    </style>
